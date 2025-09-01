@@ -199,6 +199,6 @@ def checkvip(teleid, bottoken):
         sendvideo(bottoken, teleid, vid, msg, makebuttons())
         if status in ["𝐄𝚡𝚙𝚒𝚛𝚎𝚍 🚫", "𝐏𝚞𝚛𝚌𝚑𝚊𝚜𝚎 𝐀𝚌𝚌𝚎𝚜𝚜 😾"]:
             sys.exit()
-    except Exception:
-        print(" ㅤㅤ\033[1;31m[ ⚚ ]    𝐔𝚗𝚎𝚡𝚙𝚎𝚌𝚝𝚎𝚍 𝐄𝚛𝚛𝚘𝚛. ³ ⚠️")
+    except Exception as e:
+        print(f" ㅤㅤ\033[1;31m[ ⚚ ]    {e}")
         sys.exit(1)
